@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="country">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="population" type="xs:integer"/>
+      <xs:element name="area" type="xs:integer"/>
+      <xs:element name="capital" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string"/>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

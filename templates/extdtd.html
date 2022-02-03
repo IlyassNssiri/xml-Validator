@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}External DTD{% endblock %}
+    {% block content %}
+    <fieldset>
+      <legend>External DTD Validation</legend>
+      <br><br>
+      <div class="d-flex justify-content-center">
+         <button class="button-35" role="button" id="Mybtn1">Using File Input</button>
+         <button class="button-35" role="button" id="Mybtn2">Using Text Input</button>
+    </div>
+      <form id="form1" action ="extdtd" method = "POST" enctype = "multipart/form-data">
+        <label class="file">XML:</label>
+        <input type = "file" name = "f2" />
+        <label>DTD:</label>
+        <input type = "file" name = "f1" />
+        <input type = "submit" value="Submit" />
+    </form>
+    <br>
+   
+    <script>
+      var valide = false;
+      $(document).ready(function(){
+  $('#Mybtn1').click(function(){
+    $('#form1').toggle(500);
+      if(!valide){
+        $('#Mybtn1').css('background-color','#D64161');
+        $('#Mybtn1').css('color','ghostwhite');
+        valide = true;
+      }else{
+       $('#Mybtn1').css('background-color','#fff');
+       $('#Mybtn1').css('color','black'); 
+       valide = false;
+      } 
+  });
+});
+</script>
+    <form id="form2" action="DTD_TEXT" method="POST">
+      <br>
+      <label class="text">XML:</label>
+      <textarea name="xml1" rows="5" cols="50"></textarea>
+      <label class="text">DTD:</label>
+      <textarea name="dtd1" rows="5" cols="50"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+    <div class="card-header">Output</div>
+  <div class="card-body">
+    <h5 class="card-text">{{message6}}</h5>
+    <h5 class="card-text">{{message4}}</h5>
+  </div>
+    <script>
+      var valide1 = false;
+      $(document).ready(function(){
+  $('#Mybtn2').click(function(){
+    $('#form2').toggle(500);
+      if(!valide1){
+        $('#Mybtn2').css('background-color','#D64161');
+        $('#Mybtn2').css('color','ghostwhite');
+        valide1 = true;
+      }else{
+       $('#Mybtn2').css('background-color','#fff'); 
+       $('#Mybtn2').css('color','black');
+       valide1 = false;
+      }      
+  });
+});
+</script>
+
+  </fieldset>
+    {% endblock %}

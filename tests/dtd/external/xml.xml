@@ -1,0 +1,13 @@
+<!DOCTYPE Modules SYSTEM "ex4.dtd">
+<Modules>
+	<cours  id="id1">
+    <Titre > 40h </Titre>
+    <Volume> 40h </Volume>
+    <Enseignant> XY </Enseignant>
+  </cours>
+  <cours cid="id2">
+    <Titre > Java</Titre>
+    <Volume> 40h </Volume>
+  </cours>
+</Modules>
+

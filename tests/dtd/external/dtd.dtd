@@ -1,0 +1,7 @@
+<!ELEMENT Modules (cours)+>
+<!ELEMENT cours (Titre , Volume , Enseignant) >
+<!ELEMENT Titre (#PCDATA) >
+<!ELEMENT Volume (#PCDATA) >
+<!ELEMENT Enseignant (#PCDATA)>
+<!ATTLIST cours id NMTOKEN #IMPLIED
+                  cid NMTOKEN #IMPLIED>

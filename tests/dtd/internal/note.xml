@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE country [
+<!ELEMENT country (population, area, capital)>
+<!ELEMENT population (#PCDATA)>
+<!ELEMENT area (#PCDATA)>
+<!ELEMENT capital (#PCDATA)>
+<!ATTLIST country name CDATA #REQUIRED>
+]>
+<country>
+  <population>32225560</population>
+  <area>652000</area>
+  <capital>Kabul</capital>
+</country>
+
+
+
+
+
