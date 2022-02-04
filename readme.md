@@ -15,5 +15,3 @@
   +  XML Schema ( external )
   +  DTD (internal  &  external )
   with specifying the error types and line location
-
-#### - Responsive web app
