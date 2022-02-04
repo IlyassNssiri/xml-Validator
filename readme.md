@@ -6,14 +6,14 @@
     pip install flask
 
 
-#### To launch the app execute the following command
+#### To launch the app execute the following  
     python app.py
 
-##  functionnalities
+##  Functionnalities
 
-#### validate XML using :
+#### - validate XML using :
   +  XML Schema ( external )
   +  DTD (internal  &  external )
   with specifying the error types and line location
 
-#### Responsive web app
+#### - Responsive web app
