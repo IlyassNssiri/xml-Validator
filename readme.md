@@ -11,7 +11,7 @@
 
 ##  Functionnalities
 
-#### - validate XML using :
+#### validate XML using :
   +  XML Schema ( external )
   +  DTD (internal  &  external )
   with specifying the error types and line location
